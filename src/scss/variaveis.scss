@@ -1,0 +1,48 @@
+$principal: #a29257;
+$principal-darken: darken($principal, 20%);
+$principal-lighten: lighten($principal, 20%);
+$principal-adjust-color: adjust-color($principal, $saturation: 20%);
+$principal-adjust-color2: adjust-color($principal, $hue: 40deg);
+$principal-desaturate: desaturate($principal, 20%);
+
+$secundaria: #553233;
+$secundaria-darken: darken($secundaria, 20%);
+$secundaria-lighten: lighten($secundaria, 20%);
+$secundaria-adjust-color: adjust-color($secundaria, $saturation: 20%);
+$secundaria-adjust-color2: adjust-color($secundaria, $hue: 30deg);
+$secundaria-desaturate: desaturate($secundaria, 20%);
+
+// Paleta de cinza
+$preto: #000000;
+$branco: #ffffff;
+$cinza-1: lighten($preto, 10%);
+$cinza-2: lighten($preto, 20%);
+$cinza-3: lighten($preto, 30%);
+$cinza-4: lighten($preto, 40%);
+$cinza-5: lighten($preto, 50%);
+
+$whatsApp: #0aa10a;
+
+// spacing
+$spacing-small: 10px;
+$spacing-medium: 20px;
+$spacing-large: 30px;
+$spacing-large: 40px;
+
+// Border Radius
+$border-radius: 7px;
+
+// Font
+$txt-title-small: 2rem;
+$txt-title-medium: 2.5rem;
+$txt-title-large: 3rem;
+
+$txt-size-small: 1rem;
+$txt-size-medium: 1.2rem;
+$txt-size-large: 1.4rem;
+$txt-size-xl: 1.8rem;
+
+
+
+// Fonte Family
+$font-family: "Roboto", sans-serif;

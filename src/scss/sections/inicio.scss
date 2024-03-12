@@ -1,0 +1,33 @@
+.inicio {
+    height: 90vh;
+    display: grid;
+    align-items: center;
+    h1 {
+        font-size: 4rem;
+        font-weight: 200;
+        color: $secundaria;
+    }
+
+    .nome {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        font-size: 2rem;
+        color: $secundaria;
+        .barra {
+            height: 140px;
+            border-right: 4px solid $principal;
+        }
+
+        p {
+            margin: 0;
+            font-weight: 100;
+        }
+    }
+
+    .whats {
+        margin-top: 1rem;
+        width: 150px;
+        justify-content: center;
+    }
+}
