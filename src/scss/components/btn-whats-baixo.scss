@@ -2,9 +2,10 @@
     border-radius: 50%;
     background-color: $whatsApp;
     padding: $spacing-medium;
-    position: absolute;
+    position: fixed;
     bottom: 20px;
     right: 20px;
     box-shadow: 2px 2px 15px $preto;
     color: $branco;
+    z-index: 9999999;
 }
