@@ -23,6 +23,21 @@ $cinza-5: lighten($preto, 50%);
 
 $whatsApp: #0aa10a;
 
+// Gradiente Card
+$gradiente-card-secundaria: linear-gradient(
+    132deg,
+    rgb(85, 50, 51) 21%,
+    rgb(85 53 54) 88%,
+    rgb(79 67 67) 100%
+);
+
+$gradiente-card-principal: linear-gradient(
+    132deg,
+    rgba(162, 146, 87, 1) 39%,
+    rgba(196, 176, 104, 1) 59%,
+    rgba(255, 229, 135, 1) 100%
+);
+
 // spacing
 $spacing-small: 10px;
 $spacing-medium: 20px;
@@ -41,8 +56,6 @@ $txt-size-small: 1rem;
 $txt-size-medium: 1.2rem;
 $txt-size-large: 1.4rem;
 $txt-size-xl: 1.8rem;
-
-
 
 // Fonte Family
 $font-family: "Roboto", sans-serif;

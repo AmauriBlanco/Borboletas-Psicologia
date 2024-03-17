@@ -31,3 +31,9 @@
         justify-content: center;
     }
 }
+
+@media (max-width: 768px) {
+    .inicio {
+        height: 50vh;
+    }
+}

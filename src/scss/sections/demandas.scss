@@ -1,0 +1,80 @@
+.demandas {
+    padding: $spacing-xl 0 100px 0;
+
+    .titulo {
+        text-align: center;
+        font-size: $txt-title-large;
+    }
+
+    .grid-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        margin-top: 2rem;
+
+        .card {
+            padding: $spacing-large;
+            border-radius: 50px;
+            .card-itens {
+                margin-top: 1rem;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1rem;
+
+                .card-item {
+                    display: flex;
+                    align-items: center;
+                    gap: 1.5rem;
+                    .numero {
+                        display: block;
+                        border-radius: 50%;
+                        font-size: 2rem;
+                        font-weight: 900;
+                        padding: 5px 20px;
+                    }
+                    p {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+
+        .fill {
+            background: $gradiente-card-principal;
+            color: $branco;
+
+            .numero {
+                background-color: $branco;
+                color: $principal;
+            }
+        }
+
+        .empty {
+            border: 4px solid $principal;
+            .numero {
+                background-color: $principal;
+                color: $branco;
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .demandas {
+        .grid-cards {
+            grid-template-columns: 1fr;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .demandas {
+        .grid-cards {
+            .card {
+                .card-itens {
+                    grid-template-columns: 1fr;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,109 @@
+.contato {
+    background-image: url("https://lirp.cdn-website.com/20dc9c4e/dms3rep/multi/opt/banner-1920w.png");
+    background-size: cover;
+    background-position: right;
+
+    .mascara-bg {
+        background-color: #a29257bd;
+        padding: $spacing-xl 0;
+        color: #fff;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    p {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    form {
+        max-width: 380px;
+        width: 100%;
+        margin-inline: auto;
+        background-color: #fff1c0;
+        padding: $spacing-large;
+        border-radius: $border-radius;
+        display: grid;
+        grid-template-rows: auto;
+        gap: 1rem;
+        grid-template-areas:
+            "nome nome"
+            "email tel"
+            "assunto assunto"
+            "mensagem mensagem"
+            "enviar enviar";
+
+        .nome {
+            grid-area: nome;
+        }
+
+        .email {
+            grid-area: email;
+        }
+
+        .tel {
+            grid-area: tel;
+        }
+
+        .assunto {
+            grid-area: assunto;
+        }
+
+        .mensagem {
+            grid-area: mensagem;
+        }
+
+        .enviar {
+            grid-area: enviar;
+        }
+
+        .input-item {
+            display: flex;
+            flex-direction: column;
+            color: $secundaria;
+
+            input,
+            textarea {
+                border: 0;
+                border-bottom: solid 1px $principal;
+                border-right: solid 1px $principal;
+                width: 100%;
+                border-radius: $border-radius;
+
+                &:focus {
+                    outline: solid 1px $principal;
+                }
+            }
+        }
+
+        button {
+            all: unset;
+            padding: $spacing-small;
+            color: $branco;
+            background-color: $principal;
+            cursor: pointer;
+            transition: 0.6s;
+            text-align: center;
+            border-radius: $border-radius;
+            &:hover {
+                transform: scale(1.03);
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .contato {
+        form {
+            grid-template-areas:
+                "nome nome"
+                "email email"
+                "tel tel"
+                "assunto assunto"
+                "mensagem mensagem"
+                "enviar enviar";
+        }
+    }
+}

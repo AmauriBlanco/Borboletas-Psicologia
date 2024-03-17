@@ -13,3 +13,12 @@
     z-index: 0;
     width: 100%;
 }
+
+@media (max-width: 768px) {
+    .my-slider {
+        img {
+            width: 100%;
+            height: 70dvh;
+        }
+    }
+}
